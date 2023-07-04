@@ -1,0 +1,168 @@
+
+/* 
+    CodSoft Internship - Web Development
+    Batch - July
+    Name - Mohit Jaiswal
+    Date - 04/07/2023
+    Level 1 (Task 1) - Landing Page  
+*/
+    
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.active {
+  color: white
+}
+
+header {
+  background: #1c1e21;
+  position: sticky;
+}
+
+nav {
+  position: sticky;
+}
+
+nav ul li:hover {
+  color: white;
+  opacity: 80%;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  transition: all 0.3s;
+}
+
+.logo {
+  color: white;
+  opacity: 80%;
+  font-size: 20px;
+}
+  
+#home {
+  background-size: cover;
+  text-align: center;
+  padding: 100px;
+  color: #1c1e21;
+  background-image: url("https://www.lendingcrowd.com/wp-content/uploads/2016/03/pablo-12.png");
+}
+  
+#home h1 {
+  font-size: 36px;
+  opacity: 90%;
+  margin-bottom: 20px;
+}
+  
+#home p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  opacity: 85%;
+}
+  
+.btn {
+  margin-top: 3px;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+strong {
+  font-size: 80px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+details {
+  cursor: pointer;
+  font-size: 20px;
+  text-align: left;;
+}
+
+#about {
+  margin-top: 0px;
+}
+
+#about-heading, #contact-heading {
+  margin-bottom: 50px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+#contact-heading {
+  color: #1c1e21;
+}
+
+#contact {
+  background-size: cover;
+  background-image: url("./Bg.png");
+  color: #1c1e21;
+}
+
+.start-button {
+  padding: 20px 50px;
+  font-size: 20px;
+}
+
+.start-button:hover {
+  color: white;
+}
+
+.btn {
+  border-radius: 30px;
+}
+
+.submit {
+  margin-top: 10px;
+  padding: 20px 50px;
+  margin-left: 630px;
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+.submit a {
+  color: #1c1e21;
+  text-decoration: none;
+}
+
+.submit:hover a {
+  color: white;
+}
+
+section {
+  padding: 80px;
+}
+
+form input,
+form textarea {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+  
+form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+  
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1e21;
+  padding: 20px;
+  color: #ffffff;
+  opacity: 60%;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  transition: all 0.5s;
+  box-shadow: 0 2px 8px rgb(123, 177, 122);
+}
