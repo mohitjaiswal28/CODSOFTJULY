@@ -5,7 +5,6 @@
 
 - Batch - July 2023
 
-Here, I have upload all my solutions of tasks in my Web Development Internship provided by [CodSoft]([../myLib2/README.md](https://www.linkedin.com/company/codesoft/)https://www.linkedin.com/company/codesoft/)
-
+Here, I have upload all my solutions of tasks in my Web Development Internship provided by CodSoft.
  
 
