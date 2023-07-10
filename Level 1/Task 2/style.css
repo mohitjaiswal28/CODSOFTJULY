@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+ }
+
+ 
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 3.5px;
+  }
+  
+::-webkit-scrollbar-track {
+    background-color: #ffffffa8;
+    border-radius: 0px;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: #bc52fa;
+    border-radius: 5px;
+  }
+  
+
+/* CSS Variables */
+:root{
+    --primary-color: aliceblue;
+    --secondary-color: #071320;
+    --main-heading: #f1f9ff;
+    --primary-heading: #f1f9ff;
+    --secondary-heading: #646e79;
+}
+
+
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    background-color: #071320;
+    color: var(--primary-color);
+    /* height: 500em; */
+}
+
+
+/* Navigation Bar */
+.navbar ul{
+    font-family: 'Outfit', sans-serif;
+    list-style-type: none;
+    margin-top: 1em;
+    margin-left: 60em;
+    padding: 0;
+    overflow: hidden;
+    /* z-index: -1; */
+}
+  
+.navbar ul li{
+    float: left;
+}
+  
+.navbar ul li a{
+    font-size: 1em;
+    font-weight: 100;
+    display: block;
+    color: white;
+    opacity: 30%;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    text-align: center; 
+    padding: 14px 25px;
+    text-decoration: none;
+}
+
+.navbar ul li:hover{
+    cursor: pointer;
+}
+
+.navbar ul li a:hover{
+    border: 1.5px solid rgba(255, 255, 255, 0.775);
+    opacity: 100%;
+}
+
+
+/* Homepage */
+.welcome{
+    display: flex;
+    margin-top: 145px;
+    margin-left: 80px;
+    font-size: 7em;
+    opacity: 50%;
+    line-height: 100%;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.myname{
+    margin-top: 15px;
+    margin-left: 80px;
+    font-size: 9em;
+    letter-spacing: -5px;
+    line-height: 80%;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+header::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    background-size: cover;
+}
+
+.graphics1{
+    position: absolute;
+    top: 8em;
+    left: 58vw;
+    transform: rotate(20deg) scale(1);
+    transition: all 0.5s ease-in-out;
+    animation: Move1 7s  infinite  ease-in-out;
+}
+
+.graphics1 img{
+    width: 34em;
+    opacity: 85%;
+    filter: saturate(1.2);
+}
+
+@keyframes Move1{
+    0%{
+        top: 8em;
+    }
+
+    25%{
+        top: 9em;
+    }
+
+    50%{
+        top: 8em;
+    }
+
+    75%{
+        top: 7em;
+    }
+
+    100%{
+        top: 8em;
+    }
+}
+
+.graphics2{
+    z-index: -1;
+    position: absolute;
+    top: 20em;
+    left: 73vw;
+}
+
+.graphics2 img{
+    height: 25em;
+    width: 25em;
+    opacity: 70%;
+    filter: saturate(1.5);
+}
+
+#gradient1{
+    position: absolute;
+    top: 16em;
+    left: 0px;
+    border-radius: 100%;
+    height: 137px;
+    width: 146px;
+    background-color: #ffffff;
+    opacity: 100%;
+    filter: blur(127px);
+}
+
+#gradient2{
+    position: absolute;
+    top: 13em;
+    right: 0px;
+    border-radius: 100%;
+    height: 100px;
+    width: 130px;
+    background-color: #747ef2;
+    opacity: 100%;
+    filter: blur(147px);
+}
+
+.logo{
+    position: absolute;
+    top: 1.5em;
+    left: 2em;
+}
+
+.logo img{
+    height: 40px;
+    width: 40px;
+    opacity: 100%;
+    transition: all 0.7s ease-in-out;
+}
+
+.logo img:hover{
+    transform: rotate(180deg);
+}
+
+.intro{
+    display: block;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-left: 80px;
+    font-size: 1.3em;
+    opacity: 85%;
+    line-height: 105%;
+    font-family: 'Space Grotesk', sans-serif;  
+}
+
+.homepage .intro span{
+    display: inline;
+    all: unset;
+    color: white;
+    font-weight: bolder;
+    opacity: 100%;
+}
+
+.homepage .intro span a{
+    display: inline;
+    text-decoration: none;
+    color: white;
+}
+
+#resume{
+    display: block;
+    position: absolute;
+    margin-top: 4em;
+    margin-left: 8em;
+    background-color: transparent;
+    border: 1px solid white;
+    opacity: 80%;   
+    border-radius: 10px;
+    text-align: center;
+    padding: 14px 25px;
+    transform: scale(1.3);
+    transition: all 0.6s ease-in-out;
+}
+
+#resume a{
+    font-size: 1.2em;
+    font-weight: 100;
+    color: white;
+    opacity: 80%;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.homepage #resume:hover{
+    cursor: pointer;
+    transform: scale(1.35) translate(2em);
+    border: 1.5px solid white;
+    opacity: 100%;
+}
+
+.homepage #resume:hover a{
+    cursor: pointer;
+    opacity: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media only screen 
+  and (min-device-width: 100px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .navbar{
+        /* display: none; */
+        visibility: hidden;
+    }
+
+    .menu{
+        visibility: hidden;
+        display: none;
+    }
+
+    
+    /* Homepage */
+    .welcome{
+        margin-top:2em;
+    }
+
+    .myname{
+        font-size: 10em;
+        margin-left: 80px;
+        font-weight: bolder;
+    }
+
+    .graphics1{
+        margin-top: 1em;
+        left: 96vw;
+    }
+
+    .graphics1 img{
+        height: 45em;
+        width: 59em;
+        transform: rotate(-20deg);
+    }
+
+    .graphics2{
+        z-index: -1;
+        margin-top: 30em;
+        margin-left: 54vw;
+    }
+
+    .graphics2 img{
+        opacity: 70%;
+        height: 33em;
+        width: 34em;
+    }
+
+    #gradient2{
+        margin-top: 45em;
+        left: 98vw;
+        height: 10em;
+        width: 10em;
+        filter: blur(180px);
+    }
+    .intro{
+        all: unset;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 85px;
+        margin-left: 80px;
+        font-size: 1.8em;
+        opacity: 85%;
+        line-height: 120%;
+        font-family: 'Space Grotesk', sans-serif;  
+    }
+
+    #resume{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4em;
+        width: 16em;
+        margin-left: 30vw;
+        margin-top: 15vh;
+    }
+
+    #resume a{
+        font-size: 1.4em;
+    }
+}
